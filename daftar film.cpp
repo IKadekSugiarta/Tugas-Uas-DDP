@@ -15,13 +15,13 @@ void Hasil (int x, int y){
             cout << "Cukup Umur";
         }
         else{
-            cout << "Belum Cukup umur";
+            cout << "Belum Cukup umur"<<endl;
       }
    }
 }
 
 int main(){
-    int umur, kel;
+    int umur, kel, harga, jumlah,total;
 
  	cout << "================================" <<endl;
     cout << "	-Daftar Film-" <<endl;
@@ -39,4 +39,26 @@ int main(){
     cout << "================================" <<endl;
 
     Hasil(kel,umur);
+    if(umur < 18){
+    	cout <<endl;
+    	cout <<endl;
+    	cout<<"ANDA TIDAK BISA MEMBELI TIKET";
+	}
+	else{
+		cout <<endl;
+		cout <<endl;
+		cout << "Jumlah Tiket : "; cin >> jumlah;
+    	cout << "================================" <<endl;
+    	harga=50000;
+    	cout <<"Harga Tiket : "<< harga<<endl;
+    	total=jumlah*harga;
+    	cout <<"Total Harga : "<<total<<endl;
+    	cout << "================================" <<endl;
+	}
+	
+
+   
+	
 }
+
+
